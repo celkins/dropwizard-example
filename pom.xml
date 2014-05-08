@@ -9,11 +9,21 @@
 
     <name>Dropwizard Example Application</name>
 
+    <properties>
+        <dropwizard.version>0.7.0</dropwizard.version>
+        <jetty.version>9.0.7.v20131107</jetty.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
-            <version>0.7.0</version>
+            <version>${dropwizard.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-proxy</artifactId>
+            <version>${jetty.version}</version>
         </dependency>
     </dependencies>
 
