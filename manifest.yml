@@ -4,3 +4,5 @@ applications:
     memory: 512M
     path: target/example-0.1.0-SNAPSHOT.jar
     buildpack: https://github.com/celkins/dropwizard-buildpack.git
+    env:
+      JAVA_OPTS: -Ddw.proxyTo=http://www.wikipedia.org/
