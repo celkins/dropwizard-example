@@ -20,7 +20,11 @@ import static example.ExampleApplication.ExampleConfiguration;
 public final class ExampleApplication extends Application<ExampleConfiguration> {
 
     public static void main(final String[] args) throws Exception {
-        new ExampleApplication().run(args);
+        if (args == null || args.length == 0) {
+            new ExampleApplication().run(new String[] {"server"});
+        } else {
+            new ExampleApplication().run(args);
+        }
     }
 
     @Override
