@@ -42,6 +42,7 @@
                                 <exclude>META-INF/*.SF</exclude>
                                 <exclude>META-INF/*.DSA</exclude>
                                 <exclude>META-INF/*.RSA</exclude>
+                                <exclude>ch/qos/logback/classic/boolex/EvaluatorTemplate.groovy</exclude>
                             </excludes>
                         </filter>
                     </filters>
