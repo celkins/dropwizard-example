@@ -1,0 +1,6 @@
+---
+applications:
+  - name: dropwizard-example
+    memory: 512M
+    path: target/example-0.1.0-SNAPSHOT.jar
+    buildpack: https://github.com/celkins/dropwizard-buildpack.git
